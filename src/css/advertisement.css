@@ -1,0 +1,137 @@
+.advertisement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/advertisement/advertisement-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 15px;
+    border-radius: 30px;
+    border-radius: 30px;
+}
+
+@media (min-width: 320px) {
+    .advertisement {
+        padding: 30px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .advertisement {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/advertisement/advertisement-tablet.jpg);
+        padding: 50px 20px;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .advertisement {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/advertisement/advertisement.jpg);
+        padding: 60px 30px;
+        border-radius: 20px;
+    }
+}
+
+.advertisement-visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.advertisement-description {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+}
+
+.advertisement-description span {
+    font-weight: 700;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+@media (min-width: 320px) {
+    .advertisement-description {
+        font-size: 32px;
+        width: 278px;
+        height: 167px;
+    }
+}
+
+@media (min-width: 375px) {
+    .advertisement-description {
+        font-size: 32px;
+        width: 278px;
+        height: 167px;
+    }
+}
+
+@media (min-width: 768px) {
+    .advertisement-description {
+        font-size: 48px;
+        width: 578px;
+        height: 185px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .advertisement-description {
+        width: 610px;
+        height: 132px;
+        font-size: 48px;
+    }
+}
+
+.advertisement-contact-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: 1px solid rgba(251, 251, 251, 0.15);
+    border-radius: 16px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 160px;
+        height: 48px;
+}
+
+.advertisement-contact-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (min-width: 375px) {
+    .advertisement-contact-link {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .advertisement-contact-link {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .advertisement-contact-link {
+        font-size: 14px;
+        padding: 12px 24;
+        position: fixed;
+        top: 80px;
+        right: 80px;
+        bottom: auto;
+        left: auto;
+    }
+}
+
