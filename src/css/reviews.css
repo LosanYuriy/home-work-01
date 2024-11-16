@@ -90,34 +90,3 @@ section-reviews {
         min-height: 272px; 
     }
 }
-
-@media screen and (max-width: 1280px) {
-    .reviews-list-item {
-        width: 370px;
-        
-    }
-    .reviews-name {
-        width: 1150px;
-    }
-    .reviews-text {
-        max-width: 298px;
-          
-    }
-    .section-reviews {
-        margin-top: 40px; /* Отступ снизу от Reviews */
-      }
-      .reviews-list {
-        gap: 20px;
-        justify-content: center;
-      }
-}
-
-@media screen and (min-width: 768px){
-   .reviews-text { 
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 125%;
-      text-align: center;
-      color: rgba(12, 12, 12, 0.4); 
-      }
-    }
