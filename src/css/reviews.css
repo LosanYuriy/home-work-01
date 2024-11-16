@@ -7,6 +7,14 @@ section-reviews {
     padding-right: 20px;
     margin: 0 auto;
 }
+.reviews-img {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 100%;
+    border-color: #fbfbfb;
+    border-width: 2px;
+  }
 .section-title {
     font-family: Gilroy, sans-serif;
     font-weight: 600;
