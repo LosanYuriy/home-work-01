@@ -29,3 +29,14 @@
     text-align: center;
     color: rgba(12, 12, 12, 0.4);
 }
+.reviews-list {
+    display: flex;
+}
+/* Скрываем элементы списка на экранах меньше 768px */
+@media (max-width: 768px) {
+    .menu-item:nth-child(2), /* Скрыть третий элемент */
+    .menu-item:nth-child(3) { /* Скрыть четвертый элемент */
+      display: none;
+    }
+  }
+  
