@@ -1,7 +1,11 @@
 section-reviews {
-    text-align: left;
-    background-color: #FBFBFB;
-    padding: 100px 0;
+    max-width: 320px;
+    min-width: 374px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
 }
 .section-title {
     font-family: Gilroy, sans-serif;
@@ -10,7 +14,7 @@ section-reviews {
     line-height: 100%;
     letter-spacing: -0.02em;
     color: #0C0C0C;
-     margin-bottom: 40px; /* Расстояние между заголовком и карточками */
+     margin-bottom: 24px; /* Расстояние между заголовком и карточками */
  }
 .reviews-item-title {
     font-family: Gilroy, sans-serif;
@@ -43,24 +47,26 @@ section-reviews {
     /* Центрирует текст внутри карточки */
   }
 /* Скрываем элементы списка на экранах меньше 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .reviews-list-item:nth-child(2), /* Скрыть третий элемент */
     .reviews-list-item:nth-child(3) { /* Скрыть четвертый элемент */
       display: none;
     }
-  }
   .reviews-list-item {
     list-style: none;
     background-color: #F3F3F3;
     flex-direction: column;
     border-radius:30px;
     padding: 32px 36px 32px 36px;
-    min-width: 335px;
-    min-height: 262px;
+    max-width: 335px;
     margin: 0;
     padding: 0;
-    
   }
+  }
+
+  @media screen and (min-width: 768px)and (max-width: 1279px)  {
+
+
   @media screen and (max-width: 768px) {
     .reviews-list-item {
         flex-wrap: nowrap;
