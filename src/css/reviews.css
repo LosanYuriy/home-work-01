@@ -28,6 +28,8 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(12, 12, 12, 0.4);
+    margin-bottom: 32px;
+    margin-top: 8px;
 }
 .reviews-list {
     display: flex;
@@ -81,7 +83,7 @@
     }
     .reviews-text {
         max-width: 298px;
-        margin-top: 8px;  
+          
     }
     .section-reviews {
         margin-top: 40px; /* Отступ снизу от Reviews */
