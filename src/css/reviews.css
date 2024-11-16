@@ -40,4 +40,6 @@
       display: none;
     }
   }
-  
+  .reviews-name {
+    list-style: none;
+  }
