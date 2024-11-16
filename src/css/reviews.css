@@ -31,6 +31,7 @@
 }
 .reviews-list {
     display: flex;
+    list-style: none;
 }
 /* Скрываем элементы списка на экранах меньше 768px */
 @media screen and (max-width: 768px) {
