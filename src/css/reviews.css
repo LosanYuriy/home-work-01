@@ -34,8 +34,8 @@
 }
 /* Скрываем элементы списка на экранах меньше 768px */
 @media (max-width: 768px) {
-    .menu-item:nth-child(2), /* Скрыть третий элемент */
-    .menu-item:nth-child(3) { /* Скрыть четвертый элемент */
+    .reviews-list-item:nth-child(2), /* Скрыть третий элемент */
+    .reviews-list-item:nth-child(3) { /* Скрыть четвертый элемент */
       display: none;
     }
   }
