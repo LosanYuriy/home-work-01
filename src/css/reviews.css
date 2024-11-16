@@ -77,10 +77,13 @@ section-reviews {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .reviews-list-item {
         width: 370px;
         
+    }
+    .reviews-name {
+        width: 1150px;
     }
     .reviews-text {
         max-width: 298px;
