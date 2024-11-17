@@ -1,4 +1,6 @@
-
+header {
+  font-family: var(--font-family);
+  }тзь кгт вум
 .contacts-container {
   padding-bottom: 60px;
 }
@@ -15,7 +17,7 @@
     @media screen and (min-width: 1280px) {
     .contacts-block {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
     }
     }
 
@@ -97,11 +99,11 @@
   line-height: 1.25;
   color: #0c0c0c;
   padding-left: 14px;
-  transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-input:hover,
 .contacts-input:focus {
-  border: 1px solid #3350e9;
+  border-color: #3350e9;
 }
     @media screen and (min-width: 375x) {
       .contacts-input {
@@ -122,7 +124,7 @@
 
       }
     }
-input::placeholder {
+input::placeholder-shown {
   font-size: 16px; 
   line-height: 1.25;
   color: #0c0c0c;
@@ -132,10 +134,9 @@ input::placeholder {
   border-radius: 12px;
   height: 84px;
   padding-top: 12px;
-  padding-bottom: 54px;
   padding-left: 14px;
 }
-textarea::placeholder {
+textarea::placeholder-shown {
   font-size: 16px; 
   line-height: 1.25;
   color: #0c0c0c;
@@ -156,12 +157,13 @@ textarea::placeholder {
     }
 .contacts-button {
   border-radius: 16px;
-  padding: 12px 50px;
   width: 134px;
   height: 42px;
   background: #3350e9; 
   line-height: 1.29;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   color: #fbfbfb;
   border: none;
   font-weight: 500;
