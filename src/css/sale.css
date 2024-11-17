@@ -2,6 +2,18 @@
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .sale {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale {
+    padding-bottom: 100px;
+  }
+}
+
 
 @media screen and (min-width: 1280px) {
   .sub-container {
