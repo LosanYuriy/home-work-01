@@ -1,11 +1,5 @@
 .section-reviews {
-    max-width: 320px;
-    min-width: 374px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    margin-bottom: 60px;
 }
 .reviews-img {
     display: flex;
@@ -42,7 +36,7 @@
     text-align: center;
     color: rgba(12, 12, 12, 0.4);
     margin-bottom: 32px;
-    margin-top: 8px;
+   
 }
 .reviews-list {
     display: flex;
@@ -104,6 +98,7 @@
  @media screen and (min-width: 768px) {
     .section-reviews{
       max-width: 768px;
+      margin-bottom: 80px;
     }
     .section-title {
       font-size: 48px;
@@ -117,7 +112,7 @@
       display: block;
     }
     .reviews-list-item {
-      width: calc((100% - 1 * 20px) / 2);
+      width: calc((100% - 16px) / 2);
     }
     .reviews-subtitle {
       font-size: 18px;
@@ -132,6 +127,7 @@
     .section-reviews{
       max-width: 1280px;
       padding: 0 65px;
+      margin-bottom: 100px;
     }
     .reviews-list {
       gap: 20px;
