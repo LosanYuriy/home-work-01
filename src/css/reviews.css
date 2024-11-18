@@ -99,6 +99,7 @@
     }
     .reviews-list {
       gap: 16px;
+      width: 100%;
     }
     .reviews-list-item:nth-child(2) {
       display: block;
@@ -122,6 +123,7 @@
     }
     .reviews-list {
       gap: 20px;
+      width: 100%;
     }
     .reviews-list-item:nth-child(3) {
       display: block;
