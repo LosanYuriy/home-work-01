@@ -1,8 +1,5 @@
 .hero {
     font-family: var(--font-family);
-}
-
-.hero {
     padding: 60px 0;
 }
 
@@ -126,6 +123,12 @@ font-weight: 600;
         text-decoration-skip-ink: none;
         color: #0c0c0c;
         align-self: self-end;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+     color: #3350e9; 
 }
 
 @media screen and (min-width: 768px) {
