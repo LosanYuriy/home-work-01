@@ -103,9 +103,10 @@
           }
     
       
-    .catalog-btn {
+    .about-anchor-link{
       width: 160px;
       height: 48px;
+      padding: 15px 37px;
       border-radius: 16px;
       border: none;
       background: #3350E9;
@@ -118,7 +119,7 @@
       transition-duration: 250ms;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .catalog-btn:hover, .catalog-btn:focus {
+    .about-anchor-link:hover, .about-anchor-link:focus {
         background-color: #1F3CD4;
     }
 
