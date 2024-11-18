@@ -10,7 +10,7 @@
     border-width: 2px;
   }
 .section-title {
-    font-family: Gilroy, sans-serif;
+    font-family: "Gilroy", sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 100%;
@@ -19,7 +19,7 @@
      margin-bottom: 24px; 
  }
 .reviews-item-title {
-    font-family: Gilroy, sans-serif;
+    font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 125%;
@@ -28,7 +28,7 @@
     color: #0C0C0C;
 }
 .reviews-text {
-    font-family: Gilroy,;
+    font-family: "Gilroy",sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
@@ -48,10 +48,6 @@
     align-items: center; 
 }
 
-.reviews-list {
-    list-style: none;
-    display: flex;
-  }
 
 .reviews-list-item:nth-child(2) {
     display: none;
