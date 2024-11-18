@@ -86,11 +86,7 @@
     text-align: center;
     color: rgba(12, 12, 12, 0.4);
   }
-media screen and (min-width: 375px) and (max-width: 767px) {
-    section-reviews{
-      max-width: 375px;
-    }
-  }
+
  @media screen and (min-width: 768px) {
     .section-reviews{
      
@@ -121,8 +117,7 @@ media screen and (min-width: 375px) and (max-width: 767px) {
   }
 @media screen and (min-width: 1280px) {
     .section-reviews{
-     
-     
+    
       margin-bottom: 100px;
     }
     .reviews-list {
