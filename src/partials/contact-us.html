@@ -1,26 +1,26 @@
-<div class="container contacts-container">
-    <h2 class="title-contacts">Contact Us</h2>
-    <div class="contacts-block">
-      <div class="container-form">
-        <p class="form-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
-        <form class="form">
-          <input class="contacts-input" type="text" name="user-name" placeholder="Name"/>
-          <input class="contacts-input" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" name="email" placeholder="Email"/>
-          <input class="contacts-input" type="tel" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" name="phone" placeholder="+380" />
-          <textarea  class="contacts-comment" style="resize: none;" name="user-comment" placeholder="Comment"></textarea>
+<section>
+  <div class="container contacts-container">
+      <h2 class="title-contacts">Contact Us</h2>
+      <div class="contacts-block">
+          <form class="form">
+            <p class="form-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
+            <input class="contacts-input" type="text" name="user-name" placeholder="Name"/>
+            <input class="contacts-input" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" name="email" placeholder="Email"/>
+            <input class="contacts-input" type="tel" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" name="phone" placeholder="+380" />
+            <textarea  class="contacts-comment" style="resize: none;" name="user-comment" placeholder="Comment"></textarea>
+            <button class="contacts-button" type="submit">Send</button>
         </form>
-        <button class="contacts-button" type="submit">Send</button>
-      </div>
-      <div class="container-contacts-foto">
-        <picture>
-          <source srcset="img/contact-us/contacts-desk-1x.jpg 1x, img/contact-us/contacts-desk-2x.jpg 2x"
-              media="(min-width: 1280px)" />
-            <source srcset="img/contact-us/contacts-tab-1x.jpg 1x, img/contact-us/contacts-tab-2x.jpg 2x"
-              media="(min-width: 768px)" />
-            <source srcset="img/contact-us/contacts-mob-1x.jpg 1x, img/contact-us/contacts-mob-2x.jpg 2x"
-              media="(max-width: 767px)" />
-            <img class="contacts-foto" src="/img/contact-us/contacts-desk-1x.jpg" alt="clock-on-stone" width="530" />
-        </picture>
+        <div class="container-contacts-foto">
+          <picture>
+            <source srcset="img/contact-us/contacts-desk-1x.jpg 1x, img/contact-us/contacts-desk-2x.jpg 2x"
+                media="(min-width: 1280px)" />
+              <source srcset="img/contact-us/contacts-tab-1x.jpg 1x, img/contact-us/contacts-tab-2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="img/contact-us/contacts-mob-1x.jpg 1x, img/contact-us/contacts-mob-2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="contacts-foto" src="/img/contact-us/contacts-desk-1x.jpg" alt="clock-on-stone" width="530" />
+          </picture>
+        </div>
       </div>
     </div>
-  </div>
+</section>
