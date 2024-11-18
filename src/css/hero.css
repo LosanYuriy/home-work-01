@@ -12,6 +12,12 @@
     } 
 }
 
+@media screen and (min-width: 1280px) {
+    .hero{
+        padding-bottom: 100px;
+    }
+}
+
 .hero-container-item {
     display: flex;
     flex-direction: column;
