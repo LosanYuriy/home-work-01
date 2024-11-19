@@ -14,7 +14,6 @@
   }
 }
 
-
 @media screen and (min-width: 1280px) {
   .sub-container {
     display: flex;
@@ -74,10 +73,27 @@
 }
 
 .sale-unit-item {
-  border: 1px solid rgba(12, 12, 12, 0.05);
+  border: none;
   border-radius: 16px;
   background-color: #f3f3f3;
   padding: 13px 14px;
+}
+
+/* оскільки в макеті бордер зроблений внутрішнім, тобто падінг відраховується від зовнішнього краю бордера то в проєкті бордер реалізований як псевдоєлемент, для збереження всіх пропорцій і розмірів обєктів */
+.sale-unit-item {
+  position: relative;
+}
+
+.sale-unit-item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -89,7 +105,6 @@
 @media screen and (min-width: 768px) {
   .sale-unit-item {
     padding: 16px 18px;
-    max-width: 132px;
   }
 }
 
@@ -101,11 +116,32 @@
   transition: transform 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 768px) {
+  .unit-item-img {
+    min-width: 96px;
+  }
+}
+
 .sale-unit-top {
-  border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background-color: #f3f3f3;
   padding: 50px;
+}
+
+.sale-unit-item {
+  position: relative;
+}
+
+.sale-unit-item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -188,24 +224,29 @@
 }
 
 .sale-price-item-active {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: #fbfbfb;
   background-color: rgba(251, 251, 251, 0.1);
   border-radius: 8px;
   padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.sale-price-text-active {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  /* при однакових заданих параметрах тексту на макеті і в проєкті, остаточні розміри тексту різняться. тому не line-height: 1.25; */
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
 }
 
 @media screen and (min-width: 768px) {
-  .sale-price-item-active {
+  .sale-price-text-active {
     font-size: 20px;
     line-height: 1;
   }
 }
 
-.sale-price-item {
+.sale-price-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -231,36 +272,57 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .sale-card-text {
+    line-height: 1.1;
+
+    /* при однакових заданих параметрах тексту на макеті і в проєкті, остаточні розміри тексту різняться. тому не line-height: 1.25; */
+  }
+}
+
 .sale-options-list {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .sale-options-list {
+    max-width: 398px;
+  }
+}
+
 .sale-options-item {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.3;
-  color: #fbfbfb;
-  border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 8px;
   padding: 8px 12px;
 }
 
+.sale-options-item {
+  position: relative;
+}
+
+.sale-options-item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.options-item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #fbfbfb;
+}
+
 @media screen and (min-width: 768px) {
-  .sale-options-item {
+  .options-item-text {
     font-size: 14px;
     line-height: 1.29;
-  }
-
-  .sale-options-list:after {
-    content: '';
-    width: 100%;
-    order: 0;
-  }
-
-  .new-string,
-  .new-string ~ .sale-options-item {
-    order: 1;
   }
 }
