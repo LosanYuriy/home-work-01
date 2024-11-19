@@ -139,8 +139,8 @@ font-weight: 600;
 }
 
 .hero-photo-clock {
-    max-width: 335px;
-    max-height: 366px;
+    max-width: 100%;
+    max-height: auto;
 }
 
 @media screen and (min-width: 768px){
