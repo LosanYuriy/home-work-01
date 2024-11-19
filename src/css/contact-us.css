@@ -160,6 +160,7 @@ textarea:placeholder-shown {
   height: 42px;
   background: #3350e9; 
   line-height: 1.29;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: #fbfbfb;
