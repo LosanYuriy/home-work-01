@@ -4,7 +4,7 @@ footer {
   font-family: var(--font-family);
 }
 
-.footer {
+.footer-container {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
@@ -12,14 +12,14 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer {
+  .footer-container {
     max-width: 768px;
     padding: 0 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .footer-container {
     max-width: 1280px;
   }
 }
@@ -27,7 +27,7 @@ footer {
 .footer-wrapper {
   border-radius: 30px;
   padding: 40px 28px 28px 28px;
-  background: #0c0c0c;
+  background-color: #0c0c0c;
 }
 
 @media only screen and (min-width: 768px) {
@@ -100,11 +100,6 @@ footer {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-soc-item:hover,
-.footer-soc-item:focus {
-  border: 1px solid #fbfbfb;
-}
-
 .footer-soc-link {
   display: flex;
 }
@@ -121,7 +116,10 @@ footer {
 }
 
 .footer-tel {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
@@ -131,7 +129,6 @@ footer {
   border-radius: 16px;
   width: 152px;
   height: 44px;
-  padding: 14px 20px;
   margin-bottom: 40px;
   opacity: 0.8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,7 +138,7 @@ footer {
 .footer-tel:hover,
 .footer-tel:focus {
   opacity: 1;
-  border: 1px solid #fbfbfb;
+  border-color: #fbfbfb;
 }
 
 @media only screen and (min-width: 768px) {
@@ -150,7 +147,6 @@ footer {
     line-height: 1.29;
     width: 160px;
     height: 48px;
-    padding: 15px;
     margin-left: auto;
     margin-bottom: 0;
   }
@@ -199,18 +195,19 @@ footer {
   }
 }
 
-.footer-nav {
-}
-
 .footer-nav-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 16px;
+  width: 147px;
+  height: 64px;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-nav-list {
     flex-wrap: nowrap;
+    width: auto;
+    height: auto;
   }
 }
 
