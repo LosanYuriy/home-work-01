@@ -1,9 +1,7 @@
-section {
-  font-family: var(--font-family);
-  }
 .contacts-container {
+  font-family: var(--font-family);
   padding-bottom: 60px;
-}
+  }
     @media screen and (min-width: 768px) {
       .contacts-container {
         padding-bottom: 80px;
@@ -50,6 +48,8 @@ section {
     @media screen and (min-width: 375px) {
       .form {
         width: 335px;
+        margin-top: 40px;
+        margin-bottom: 40px;
       }   
     }
     @media screen and (min-width: 768px) {
@@ -63,11 +63,13 @@ section {
     @media screen and (min-width: 1280px) {
       .form {
         padding: 50px 60px;
-        margin-bottom: 40px;
         width: 580px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
    }
 .form-text {
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -96,8 +98,11 @@ section {
 .contacts-input:focus,
 .contacts-input:hover {
   border-color: #3350e9;
-  background-color: transparent;
 }
+.contacts-input::placeholder {
+  line-height: 125%;
+  color: var(--main);
+  }
 
     @media screen and (min-width: 375px) {
       .contacts-input {
@@ -137,6 +142,10 @@ textarea:placeholder-shown {
 .contacts-comment:focus {
   border-color: #3350e9;
 }
+.contacts-comment::placeholder {
+  line-height: 125%;
+  color: var(--main);
+  }
     @media screen and (min-width: 768px) {
       .contacts-comment {
          padding-top: 16px;
