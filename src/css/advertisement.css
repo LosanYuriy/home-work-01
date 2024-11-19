@@ -1,32 +1,41 @@
 .advertisement {
     font-family: "Gilroy", sans-serif;
+}
+
+.container-advertisement {
     background-color: black;
-    background-image: url(../img/advertisement/advertisement-mobile.webp);
+    background-image: url(/img/advertisement/advertisement-mobile.webp);
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-    padding-bottom: 60px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
 }
 
-@media (min-width: 320px) {
-    .advertisement {
-        padding: 30px 10px;
+@media (min-resolution: 192dpi) {
+    .container-advertisement {
+        background-image: url(/img/advertisement/advertisement-mobile.webp);
     }
 }
 
 @media (min-width: 768px) {
-    .advertisement {
+    .container-advertisement {
         background-image: url(../img/advertisement/advertisement-tablet.webp);
-        border-radius: 15px;
-        padding-bottom: 80px;
+        flex-direction: column;
+        padding: 60px;
     }
 }
 
 @media (min-width: 1280px) {
-    .advertisement {
+    .container-advertisement {
         background-image: url(../img/advertisement/advertisement.webp);
-        border-radius: 20px;
-        padding-bottom: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px 100px;
     }
 }
 
@@ -41,51 +50,32 @@
     border: 0;
 }
 
-
 .advertisement-description {
     font-size: 32px;
     line-height: 1;
     letter-spacing: -0.02em;
     color: #fbfbfb;
-    justify-items: left;
+    margin-bottom: 28px;
+    max-width: 279px;
 }
 
 .advertisement-description span {
-    font-family: "Gilroy", sans-serif;
     font-weight: 700;
     color: rgba(251, 251, 251, 0.5);
-}
-
-@media (min-width: 320px) {
-    .advertisement-description {
-        font-size: 32px;
-        width: 278px;
-        height: 167px;
-    }
-}
-
-@media (min-width: 375px) {
-    .advertisement-description {
-        font-size: 32px;
-        width: 278px;
-        height: 167px;
-    }
 }
 
 @media (min-width: 768px) {
     .advertisement-description {
         font-size: 48px;
-        width: 578px;
-        height: 185px;
-        justify-items: left;
+        max-width: 576px;
+        margin-bottom: 30px;
     }
 }
 
 @media (min-width: 1280px) {
     .advertisement-description {
-        width: 610px;
-        height: 132px;
         font-size: 48px;
+        max-width: 690px;
     }
 }
 
@@ -99,8 +89,7 @@
     text-decoration: none;
     font-size: 14px;
     transition: background-color 0.3s, color 0.3s;
-    margin-top: 28px;
-    justify-items: left;
+    align-self: flex-start;
 }
 
 .advertisement-contact-link:hover {
@@ -108,26 +97,7 @@
     color: #000;
 }
 
-@media (min-width: 375px) {
-    .advertisement-contact-link {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 768px) {
-    .advertisement-contact-link {
-        font-size: 14px;
-        justify-items: left;
-    }
-}
-
 @media (min-width: 1280px) {
     .advertisement-contact-link {
-        font-size: 14px;
-        position: fixed;
-        top: 40px;
-        right: 80px;
-        bottom: auto;
-        left: auto;
     }
 }
