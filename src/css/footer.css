@@ -104,8 +104,7 @@ footer {
   display: flex;
 }
 
-.footer-soc-item:hover > a > svg,
-.footer-soc-item:focus > a > svg {
+.footer-soc-icon:hover, .footer-soc-icon:focus {
   opacity: 1;
 }
 
