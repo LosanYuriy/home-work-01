@@ -143,6 +143,7 @@ header {
 /* ----------------------Mobile menu........................ */
 
 .mobile-menu {
+  font-family: var(--font-family);
   position: fixed;
   background-image: url(/img/header/background-mobile-image.jpg);
   top: 0;
