@@ -106,7 +106,7 @@
     align-self: flex-start;
 }
 
-.advertisement-contact-link:hover {
+.advertisement-contact-link:hover, .advertisement-contact-link:focus {
     background-color: #fff;
     color: #000;
 }
