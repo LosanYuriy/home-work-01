@@ -1,5 +1,6 @@
 
 .catalog {
+  font-family: var(--font-family);
   padding-bottom: 60px;
   
 }
