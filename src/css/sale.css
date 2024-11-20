@@ -1,0 +1,329 @@
+.sale {
+  padding-bottom: 60px;
+  font-family: var(--font-family);
+}
+
+@media screen and (min-width: 768px) {
+  .sale {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sub-container {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.sale-unit-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-unit-wrap {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-unit-wrap {
+    margin-bottom: 0;
+  }
+}
+
+.sale-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+}
+
+.sale-unit-list {
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-unit-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.sale-unit-item {
+  border: none;
+  border-radius: 16px;
+  background-color: #f3f3f3;
+  padding: 13px 14px;
+}
+
+/* оскільки в макеті бордер зроблений внутрішнім, тобто падінг відраховується від зовнішнього краю бордера то в проєкті бордер реалізований як псевдоєлемент, для збереження всіх пропорцій і розмірів обєктів */
+.sale-unit-item {
+  position: relative;
+}
+
+.sale-unit-item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sale-unit-item {
+    width: calc((100% - 15px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sale-unit-item {
+    padding: 16px 18px;
+  }
+}
+
+.sale-unit-item:hover img {
+  transform: scale(1.1);
+}
+
+.unit-item-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .unit-item-img {
+    min-width: 96px;
+  }
+}
+
+.sale-unit-top {
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  padding: 50px;
+}
+
+.sale-unit-item {
+  position: relative;
+}
+
+.sale-unit-item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-unit-top {
+    padding: 80px 112px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-unit-top {
+    padding: 80px 50px;
+    max-width: 428px;
+  }
+}
+
+.unit-top-img:hover {
+  transform: scale(1.3);
+}
+
+.unit-top-img {
+  transition: transform 0.4s ease;
+}
+
+.sale-card {
+  padding: 48px 28px;
+  background-color: #3350e9;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-card {
+    padding: 60px;
+  }
+}
+
+.sale-subtitle {
+  max-width: 275px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-subtitle {
+    max-width: 436px;
+    font-size: 32px;
+    line-height: 1.125;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-subtitle {
+    max-width: 389px;
+  }
+}
+
+.sale-subtitle-spec {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
+}
+
+.sale-price-list {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-price-list {
+    margin-bottom: 30px;
+  }
+}
+
+.sale-price-item-active {
+  background-color: rgba(251, 251, 251, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.sale-price-text-active {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  /* при однакових заданих параметрах тексту на макеті і в проєкті, остаточні розміри тексту різняться. тому не line-height: 1.25; */
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-price-text-active {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.sale-price-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-decoration: line-through;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.sale-card-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-card-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-card-text {
+    line-height: 1.1;
+
+    /* при однакових заданих параметрах тексту на макеті і в проєкті, остаточні розміри тексту різняться. тому не line-height: 1.25; */
+  }
+}
+
+.sale-options-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-options-list {
+    max-width: 398px;
+  }
+}
+
+.sale-options-item {
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.sale-options-item {
+  position: relative;
+}
+
+.sale-options-item::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.options-item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .options-item-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
