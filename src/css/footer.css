@@ -104,7 +104,8 @@ footer {
   display: flex;
 }
 
-.footer-soc-icon:hover, .footer-soc-icon:focus {
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
   opacity: 1;
 }
 
