@@ -4,9 +4,9 @@
       <div class="contacts-block">
           <form class="form">
             <p class="form-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
-            <input class="contacts-input" type="text" name="user-name" placeholder="Name"/>
-            <input class="contacts-input" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" name="email" placeholder="Email"/>
-            <input class="contacts-input" type="tel" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" name="phone" placeholder="+380" />
+            <input class="contacts-input" type="text" name="user-name" placeholder="Name" required />
+            <input class="contacts-input" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" name="email" placeholder="Email" title="Enter a valid email address (e.g., user@example.com)" required />
+            <input class="contacts-input" type="tel" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" name="phone" placeholder="+380" title="Enter a phone number in the format: +380-XX-XXX-XX-XX" required />
             <textarea  class="contacts-comment" style="resize: none;" name="user-comment" placeholder="Comment"></textarea>
             <button class="contacts-button" type="submit">Send</button>
         </form>

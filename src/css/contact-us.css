@@ -100,15 +100,11 @@
 .contacts-input:hover {
   border-color: #3350e9;
 }
-.contacts-input:invalid {
-  border: 1px solid rgba(139, 12, 12, 0.15);
-  background-color: rgb(247, 217, 217);
-}
+
 .contacts-input::placeholder {
   line-height: 125%;
   color: var(--main);
   }
-
     @media screen and (min-width: 375px) {
       .contacts-input {
         padding-top: 12px;
