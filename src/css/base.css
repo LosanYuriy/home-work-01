@@ -1,10 +1,13 @@
 :root {
-  --font-family: 'Gilroy', sans-serif;
+  --font-family: 'Montserrat', sans-serif;
 
-  --main: #0c0c0c;
-  --accent: #3350e9;
-  --background: #fbfbfb;
-  --cards: #f3f3f3;
+  --black: #111;
+  --orange: #fd9222;
+  --violet: #1e1823;
+  --beige: #fcf1e0;
+  --light: #fafafa;
+  --gray: #4c4c4c;
+  --white: #fff;
 
   font-size: 16px;
   line-height: 1.5;
@@ -31,4 +34,3 @@ body {
 main {
   flex-grow: 1;
 }
-
