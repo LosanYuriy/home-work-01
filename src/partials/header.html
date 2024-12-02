@@ -2,41 +2,118 @@
   <section class="container">
     <div class="header-wrapper">
       <a href="index.html" class="header-logo"
-        >Simply chocolate
-        <svg class="header-logo-svg" width="24" height="24">
-          <use href=""></use>
+        >Simply&nbsp;<span class="header-logo-span">chocolate</span>
+        <svg class="header-logo-svg" width="21" height="21">
+          <use href="/img/icons.svg#icon-Vector"></use>
         </svg>
       </a>
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-item">
-            <p class="header-nav-text">Home</p>
+            <a href="" class="header-nav-text">Home</a>
           </li>
           <li class="header-nav-item">
-            <p class="header-nav-text">How it’s made?</p>
+            <a href="" class="header-nav-text">How it’s made?</a>
           </li>
           <li class="header-nav-item">
-            <p class="header-nav-text">Chocolate is loved</p>
+            <a href="" class="header-nav-text">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
       <ul class="header-social">
         <li class="header-social-network">
-          <svg class="header-social-network-svg">
-            <use href="" class="header-social-network-use"></use>
-          </svg>
+          <a href="" class="header-social-network-link" target="_blank">
+            <svg class="header-social-network-svg" width="24" height="24">
+              <use
+                href="/img/icons.svg#icon-facebook"
+                class="header-social-network-use"
+              ></use>
+            </svg>
+          </a>
         </li>
         <li class="header-social-network">
-          <svg class="header-social-network-svg">
-            <use href="" class="header-social-network-use"></use>
-          </svg>
+          <a href="" class="header-social-network-link" target="_blank">
+            <svg class="header-social-network-svg" width="24" height="24">
+              <use
+                href="/img/icons.svg#icon-instagram"
+                class="header-social-network-use"
+              ></use>
+            </svg>
+          </a>
         </li>
         <li class="header-social-network">
-          <svg class="header-social-network-svg">
-            <use href="" class="header-social-network-use"></use>
-          </svg>
+          <a href="" class="header-social-network-link" target="_blank">
+            <svg class="header-social-network-svg" width="24" height="24">
+              <use
+                href="/img/icons.svg#icon-twitter-1"
+                class="header-social-network-use"
+              ></use>
+            </svg>
+          </a>
         </li>
       </ul>
+      <button type="button" class="header-button" data-modal-open-mobile>
+        <svg class="header-button-svg" width="28" height="28">
+          <use href="../img/icons.svg#icon-menu-03"></use>
+        </svg>
+      </button>
     </div>
   </section>
 </header>
+
+<!-- ---------------------------drop-------------------------- -->
+
+<div class="mobile-menu" data-modal-mobile>
+  <div class="mobile-container">
+    <button type="button" class="mobile-button" data-modal-close-mobile>
+      <svg class="mobile-button-svg" width="28" height="28">
+        <use href="../img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="" class="mobile-nav-text">Home</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="" class="mobile-nav-text">How it’s made?</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="" class="mobile-nav-text">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="mobile-social">
+      <li class="mobile-social-network">
+        <a href="" class="mobile-social-network-link" target="_blank">
+          <svg class="mobile-social-network-svg" width="24" height="24">
+            <use
+              href="/img/icons.svg#icon-facebook"
+              class="mobile-social-network-use"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-social-network">
+        <a href="" class="mobile-social-network-link" target="_blank">
+          <svg class="mobile-social-network-svg" width="24" height="24">
+            <use
+              href="/img/icons.svg#icon-instagram"
+              class="mobile-social-network-use"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-social-network">
+        <a href="" class="mobile-social-network-link" target="_blank">
+          <svg class="mobile-social-network-svg" width="24" height="24">
+            <use
+              href="/img/icons.svg#icon-twitter-1"
+              class="mobile-social-network-use"
+            ></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
