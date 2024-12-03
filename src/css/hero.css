@@ -1,0 +1,233 @@
+.hero {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 100px;
+}
+
+.hero-wrapper {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(/img/hero/chocolate_main_mobile.jpg);
+  width: 100%;
+  height: 620px;
+  border-radius: 30px;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: url(/img/hero/chocolate_main_mobile_2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(/img/hero/chocolate_main_table.jpg);
+    width: 100%;
+    height: 890px;
+    border-radius: 30px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-wrapper {
+      background-image: url(/img/hero/chocolate_main_table_2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/hero/chocolate_main_gesctop.jpg);
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-wrapper {
+      background-image: url(/img/hero/chocolate_main_desctop_2x.jpg);
+    }
+  }
+}
+
+.hero-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  padding-top: 395px;
+  padding-left: 20px;
+  padding-right: 16px;
+  width: 305px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 28px;
+    line-height: 121%;
+
+    padding-top: 671px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 541px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    padding-top: 381px;
+    width: 541px;
+  }
+}
+
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 14px;
+  row-gap: 32px;
+  padding-top: 32px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-list {
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: baseline;
+  }
+}
+
+.hero-item {
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 120px;
+  height: 41px;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-item:hover,
+.hero-item:focus {
+  background-color: var(--beige);
+}
+
+.hero-item:hover .hero-link,
+.hero-item:focus .hero-link {
+  color: var(--orange);
+}
+
+.hero-item-two {
+  border: 1px solid var(--white);
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 161px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-item-two:hover,
+.hero-item-two:focus {
+  border-color: var(--orange);
+}
+
+.hero-item-two:hover .hero-link,
+.hero-item-two:focus .hero-link {
+  color: var(--orange);
+}
+
+.hero-item-three {
+  width: 107px;
+  height: 28px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-item-three {
+    margin-left: auto;
+  }
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link-three {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-item-three:hover .hero-link-three,
+.hero-item-three:focus .hero-link-three {
+  color: var(--orange);
+}
+
+.span-hero-link-svg {
+  width: 28px;
+  height: 28px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-item-three:hover .span-hero-link-svg,
+.hero-item-three:focus .span-hero-link-svg {
+  background-color: var(--orange);
+}
+
+.hero-link-svg {
+  fill: var(--orange);
+  transition: fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-item-three:hover .hero-link-svg,
+.hero-item-three:focus .hero-link-svg {
+  fill: var(--white);
+}
