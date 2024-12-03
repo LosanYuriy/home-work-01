@@ -48,7 +48,7 @@
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
       ),
-      url(../img/hero/chocolate_main_gesctop.jpg);
+      url(/img/hero/chocolate_main_gesctop.jpg);
     width: 100%;
     height: 600px;
     border-radius: 30px;
