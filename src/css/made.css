@@ -1,0 +1,147 @@
+.made {
+  font-family: var(--font-family);
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .made {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made {
+    padding-bottom: 120px;
+  }
+}
+
+.made-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .made-title {
+    font-size: 24px;
+    line-height: 117%;
+    margin-bottom: 50px;
+  }
+}
+
+.made-span-title {
+  color: var(--orange);
+}
+
+.made-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .made-wrapper {
+    flex-direction: row;
+  }
+}
+
+.made-picture-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.made-picture {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .made-picture {
+    width: 614px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made-picture {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+}
+
+.made-picture-svg {
+  position: absolute;
+  fill: transparent;
+  stroke: var(--white);
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.made-picture-svg:hover,
+.made-picture-svg:focus {
+  transform: scale(1.1);
+}
+
+.made-text {
+  padding: 20px 14px;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .made-text {
+    padding: 32px;
+    max-width: 614px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made-text {
+    max-width: 516px;
+  }
+}
+
+.made-text-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.made-text-list {
+}
+
+.made-text-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.made-text-item:last-child {
+  margin-bottom: 0;
+}
+
+.made-text-svg {
+  flex-shrink: 0;
+  fill: var(--gray);
+  margin-top: 5px;
+}
+
+.made-text-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
