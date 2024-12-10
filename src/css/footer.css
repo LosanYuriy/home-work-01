@@ -1,0 +1,234 @@
+footer {
+  font-family: var(--font-family);
+  background: var(--violet);
+}
+
+.footer-list {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    gap: 50px;
+  }
+}
+
+.footer-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: var(--orange);
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 28px;
+    line-height: 121%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+.footer-title-span {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-item-right {
+    margin-left: auto;
+  }
+}
+
+.footer-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-contacts-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--white);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts-item-text:hover,
+.footer-contacts-item-text:focus {
+  color: var(--orange);
+}
+
+.footer-social-networks {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.footer-social-networks-list {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  margin-bottom: 64px;
+}
+
+.footer-social-networks-link {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.5 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-networks-svg {
+  fill: var(--white);
+  transition: fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-networks-link:hover,
+.footer-social-networks-link:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-social-networks-link:hover .footer-social-networks-svg,
+.footer-social-networks-link:focus .footer-social-networks-svg {
+  fill: var(--orange);
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-bottom-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 32px;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav-list {
+    flex-direction: row;
+  }
+}
+
+.footer-nav-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-text:hover,
+.footer-nav-text:focus {
+  color: var(--orange);
+}
+
+.footer-email {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-email {
+    margin-left: auto;
+  }
+}
+
+.footer-email-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding-left: 18px;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-email-input {
+    width: 232px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-email-input {
+    width: 313px;
+  }
+}
+
+.footer-email-input:placeholder-shown {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-button {
+  width: 120px;
+  height: 45px;
+  border-radius: 100px;
+  padding: 14px 26px;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+  transition:
+    background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--beige);
+  color: var(--orange);
+}
